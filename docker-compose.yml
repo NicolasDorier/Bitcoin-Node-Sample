@@ -15,11 +15,7 @@ services:
         whitelist=0.0.0.0/0
         maxmempool=500
         prune=50000
-        # rpcuser=btcrpc
-        # rpcpassword=btcpayserver4ever
-        # We need to use rpcauth because we also need cookieauth. rpcpassword disabled cookie file auth.
-        # Be careful if you copy the line below from the docker-compose.yml! A dollar sign is escaped.
-        rpcauth=btcrpc:a6a5d29a3f44f02e4cd8cabb5b10a234$$ab6152915515f6a9cca806d2ab5f0e2794c346ba74f812c61e48241d523778b8
+        ${RPC_AUTH:- }
       VIRTUAL_PORT: 43782
       VIRTUAL_HOST: ${BITCOIN_HOST}
       VIRTUAL_HOST_NAME: "bitcoind"

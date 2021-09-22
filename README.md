@@ -21,4 +21,6 @@ export BITCOIN_HOST="my.sampledomain.com"
 docker-compose up -d
 ```
 
+You can also use a .env file in this folder.
+
 This should expose P2P traffic on `8333`, and RPC traffic on port `443`.
