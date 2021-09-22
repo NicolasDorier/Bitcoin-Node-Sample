@@ -8,11 +8,11 @@ This is a sample docker-compose to show how to host a mainnet full-node and expo
 
 Environment variables:
 
-`BITCOIN_HOST`: The domain name of this server. (required)
-`LETSENCRYPT_EMAIL`: Email for let's encrypt (optional)
-`NETWORK`: The bitcoin network (Available: mainnet,testnet,regtest,signet. Default: mainnet)
-`REVERSEPROXY_HTTPS_PORT`: The port to listen to (Default 443)
-`RPC_AUTH`: The RPC auth string of bitcoin core for configuring username/password
+* `BITCOIN_HOST`: The domain name of this server. (required)
+* `LETSENCRYPT_EMAIL`: Email for let's encrypt (optional)
+* `NETWORK`: The bitcoin network (Available: mainnet,testnet,regtest,signet. Default: mainnet)
+* `REVERSEPROXY_HTTPS_PORT`: The port to listen to (Default 443)
+* `RPC_AUTH`: The RPC auth string of bitcoin core for configuring username/password
 
 Example:
 
